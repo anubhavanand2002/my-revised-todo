@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
+import UpperPart from './Components/UpperPart';
+import LowerPart from './Components/LowerPart';
 import './App.css';
-
 function App() {
+  const array=[
+    {
+        id:1,
+        "text":"Do all Exercise"
+    },
+    {
+        id:2,
+        "text":"Finish"
+    }
+];
+  const[initial,setinitial]=useState(array);
+  
+  function pass(newmade)
+  {
+    setinitial((previnitial)=>{
+      return(
+         [...previnitial,...newmade]
+      )
+    });
+  }
+  function addDelete(check)
+  {
+    setinitial(
+      initial.filter((current)=>current.id!=check)
+    )
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <UpperPart func={pass}/>
+      </div>
+      <div>
+        <LowerPart first={initial} ondelete={addDelete}/>
+      </div>
+      
     </div>
   );
 }

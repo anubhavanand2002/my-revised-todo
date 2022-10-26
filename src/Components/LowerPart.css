@@ -1,0 +1,15 @@
+.lower{
+    text-align: center;
+    color:white;
+}
+.unique{
+    background-color:darkred;
+    margin-left: 30vw;
+    margin-right:40vw;
+    width: 500px;
+    height:40px;
+    display: block;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 10px;
+}
