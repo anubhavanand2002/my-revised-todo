@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my-revised-todo/static/css/main.037a50d4.css",
+    "main.js": "/my-revised-todo/static/js/main.30df1b4d.js",
+    "static/js/787.b911d7e2.chunk.js": "/my-revised-todo/static/js/787.b911d7e2.chunk.js",
+    "index.html": "/my-revised-todo/index.html",
+    "main.037a50d4.css.map": "/my-revised-todo/static/css/main.037a50d4.css.map",
+    "main.30df1b4d.js.map": "/my-revised-todo/static/js/main.30df1b4d.js.map",
+    "787.b911d7e2.chunk.js.map": "/my-revised-todo/static/js/787.b911d7e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.037a50d4.css",
+    "static/js/main.30df1b4d.js"
+  ]
+}
